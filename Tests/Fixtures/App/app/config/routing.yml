@@ -1,2 +1,2 @@
 larapulse_sitemap:
-    resource: "@SitemapBundle/Resources/config/routing.yml"
+    resource: "@LarapulseSitemapBundle/Resources/config/routing.yml"

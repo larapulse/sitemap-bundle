@@ -9,7 +9,7 @@ class AppKernel extends Kernel
     {
         return array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-            new Larapulse\SitemapBundle\SitemapBundle(),
+            new Larapulse\SitemapBundle\LarapulseSitemapBundle(),
         );
     }
 

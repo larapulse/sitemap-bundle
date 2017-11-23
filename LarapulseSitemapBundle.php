@@ -6,7 +6,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Larapulse\SitemapBundle\DependencyInjection\Compiler\UrlProviderCompilerPass;
 
-class SitemapBundle extends Bundle
+class LarapulseSitemapBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {

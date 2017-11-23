@@ -1,4 +1,4 @@
 sitemap:
     path: /sitemap.xml
-    defaults: { _controller: SitemapBundle:Sitemap:sitemap }
+    defaults: { _controller: LarapulseSitemapBundle:Sitemap:sitemap }
     methods: [ GET ]

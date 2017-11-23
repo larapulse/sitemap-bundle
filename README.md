@@ -43,7 +43,7 @@ public function registerBundles()
 {
     $bundles = [
         // ...
-        new Larapulse\SitemapBundle\SitemapBundle(),
+        new Larapulse\SitemapBundle\LarapulseSitemapBundle(),
     ];
 }
 ```
@@ -74,7 +74,7 @@ routes:
 
 ```yaml
 larapulse_sitemap:
-    resource: "@SitemapBundle/Resources/config/routing.yml"
+    resource: "@LarapulseSitemapBundle/Resources/config/routing.yml"
 ```
 
 This will make the sitemap available from the `/sitemap.xml` URL.
