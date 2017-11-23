@@ -1,12 +1,12 @@
 framework:
-    secret:          Hell yeah!
+    secret:          ChangeMeOrYouWillFired!
     router:          { resource: "%kernel.root_dir%/config/routing.yml" }
     form:            false
-    csrf_protection: true
+    csrf_protection: false
     session:         ~
     default_locale:  en
     translator:      { fallback: en }
     profiler:        { only_exceptions: false }
 
-k_phoen_sitemap:
-    base_host: http://localhost
+larapulse_sitemap:
+    base_host:       http://localhost

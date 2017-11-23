@@ -9,8 +9,7 @@ class AppKernel extends Kernel
     {
         return array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
-
-            new KPhoen\SitemapBundle\KPhoenSitemapBundle(),
+            new Larapulse\SitemapBundle\SitemapBundle(),
         );
     }
 
@@ -24,7 +23,7 @@ class AppKernel extends Kernel
      */
     public function getCacheDir()
     {
-        return sys_get_temp_dir().'/KPhoenSitemapBundle/cache';
+        return sys_get_temp_dir().'/SitemapBundle/cache';
     }
 
     /**
@@ -32,6 +31,6 @@ class AppKernel extends Kernel
      */
     public function getLogDir()
     {
-        return sys_get_temp_dir().'/KPhoenSitemapBundle/logs';
+        return sys_get_temp_dir().'/SitemapBundle/logs';
     }
 }

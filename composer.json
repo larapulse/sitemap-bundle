@@ -1,33 +1,62 @@
 {
-    "name": "kphoen/sitemap-bundle",
-    "description": "Provides a way to create/generate a sitemap using Propel, Doctrine, etc.",
-    "keywords": ["sitemap", "command", "seo"],
+    "name": "larapulse/sitemap-bundle",
     "type": "symfony-bundle",
+    "description": "Provides a way to generate a sitemap as well as for static and dynamic routes, which require Propel, Doctrine, etc.",
+    "keywords": [
+        "sitemap",
+        "command",
+        "seo",
+        "symfony-bundle",
+        "larapulse",
+        "sitemap-bundle"
+    ],
     "license": "MIT",
     "authors": [
         {
             "name": "Kévin Gomez",
             "email": "contact@kevingomez.fr",
             "homepage": "http://www.kevingomez.fr/"
+        }, {
+            "name": "Sergey Podgornyy",
+            "email": "sergey.podgornyy@yahoo.de",
+            "homepage": "http://larapulse.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "symfony/framework-bundle": "~2.3|~3.0",
-        "symfony/console": "^2.3|^3.0",
+        "php": ">=7.0",
+        "symfony/framework-bundle": "~3.0",
+        "symfony/console": "^3.0",
         "kphoen/sitemap-generator": "~1.0"
     },
     "require-dev": {
-        "symfony/translation": "^2.3|^3.0",
-        "symfony/validator": "^2.3|^3.0",
-        "symfony/browser-kit": "^2.3|^3.0",
-        "phpunit/phpunit": "~4.0"
+        "symfony/translation": "^3.0",
+        "symfony/validator": "^3.0",
+        "symfony/browser-kit": "^3.0",
+        "phpunit/phpunit": "~4.0",
+        "squizlabs/php_codesniffer": "^2.3"
     },
     "autoload": {
-        "psr-4": { "KPhoen\\SitemapBundle\\": "" }
+        "psr-4": {
+            "Larapulse\\SitemapBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Larapulse\\SitemapBundle\\Tests\\": "Tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests",
+        "fix-style": "phpcbf -p --standard=PSR2 --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1 src tests"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.0.x-dev"
+            "dev-master": "1.0-dev"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }

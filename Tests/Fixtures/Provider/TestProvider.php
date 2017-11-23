@@ -1,19 +1,18 @@
 <?php
 
-namespace KPhoen\SitemapBundle\Tests\Fixtures\Provider;
+namespace Larapulse\SitemapBundle\Tests\Fixtures\Provider;
 
 use SitemapGenerator\Entity\Url;
 use SitemapGenerator\Entity\Video;
 use SitemapGenerator\Provider\ProviderInterface;
 use SitemapGenerator\Sitemap\Sitemap;
 
-
 class TestProvider implements ProviderInterface
 {
     public function populate(Sitemap $sitemap)
     {
         $url = new Url();
-        $url->setLoc('http://www.google.fr');
+        $url->setLoc('http://www.google.de');
         $url->setChangefreq(Url::CHANGEFREQ_NEVER);
         $url->setLastmod('2012-12-19 02:28');
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace KPhoen\SitemapBundle\DependencyInjection;
+namespace Larapulse\SitemapBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -10,7 +10,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('k_phoen_sitemap');
+        $rootNode = $treeBuilder->root('larapulse_sitemap');
 
         $rootNode
             ->children()

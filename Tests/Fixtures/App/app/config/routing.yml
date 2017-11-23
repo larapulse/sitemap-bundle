@@ -1,2 +1,2 @@
-kphoen_sitemap:
-    resource: "@KPhoenSitemapBundle/Resources/config/routing.yml"
+larapulse_sitemap:
+    resource: "@SitemapBundle/Resources/config/routing.yml"

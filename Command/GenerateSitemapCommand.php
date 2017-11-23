@@ -1,11 +1,10 @@
 <?php
 
-namespace KPhoen\SitemapBundle\Command;
+namespace Larapulse\SitemapBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-
 
 class GenerateSitemapCommand extends ContainerAwareCommand
 {
@@ -28,6 +27,6 @@ class GenerateSitemapCommand extends ContainerAwareCommand
 
         $output->writeln('Generating the sitemap... ');
         $output->writeln($sitemap->build());
-        $output->writeln(PHP_EOL . '<info>Done!</info>');
+        $output->writeln(PHP_EOL.'<info>Done!</info>');
     }
 }

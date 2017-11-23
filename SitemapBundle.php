@@ -1,14 +1,12 @@
 <?php
 
-namespace KPhoen\SitemapBundle;
+namespace Larapulse\SitemapBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Larapulse\SitemapBundle\DependencyInjection\Compiler\UrlProviderCompilerPass;
 
-use KPhoen\SitemapBundle\DependencyInjection\Compiler\UrlProviderCompilerPass;
-
-
-class KPhoenSitemapBundle extends Bundle
+class SitemapBundle extends Bundle
 {
     public function build(ContainerBuilder $container)
     {
