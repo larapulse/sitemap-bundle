@@ -20,7 +20,7 @@ install:
   - composer install --optimize-autoloader --no-interaction
 
 script:
-  - vendor/bin/phpcs --standard=psr2 src/
+  - vendor/bin/phpcs --encoding=utf8
   - vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
 
 after_script:
