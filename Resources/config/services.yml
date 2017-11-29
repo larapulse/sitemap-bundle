@@ -3,13 +3,17 @@ services:
         class: SitemapGenerator\Dumper\GzFileDumper
         arguments: [ "%kernel.root_dir%/../web/sitemap.xml.gz" ]
 
+    sitemap_file_dumper:
+        class: SitemapGenerator\Dumper\FileDumper
+        arguments: [ "%kernel.root_dir%/../web/sitemap.xml" ]
+
     sitemap_xml_formatter:
         class: SitemapGenerator\Formatter\XmlFormatter
 
     sitemap:
         class: SitemapGenerator\Sitemap\Sitemap
         arguments:
-            - "@sitemap_gz_dumper"
+            - "@sitemap_file_dumper"
             - "@sitemap_xml_formatter"
             - "%sitemap.config.base_host%"
             - "%sitemap.config.base_host_sitemap%"

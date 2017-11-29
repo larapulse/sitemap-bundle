@@ -4,19 +4,12 @@ All notable changes to `Larapulse/SitemapBundle` will be documented in this file
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
-
-### Added
-- Nothing
-
-### Deprecated
-- Nothing
+## 2017-11-29
 
 ### Fixed
-- Nothing
+- Change default Dumper from `GzFileDumper` to `FileDumper` because of incorrectly named index files for `GzFileDumper`. Will be switched back in next MAJOR version
 
-### Removed
-- Nothing
+## 2017-11-23
 
-### Security
-- Nothing
+### Added
+- Fork from [sitemap-php/KPhoenSitemapBundle](https://github.com/sitemap-php/KPhoenSitemapBundle/), adding support Symfony 3

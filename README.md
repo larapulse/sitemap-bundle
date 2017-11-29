@@ -3,9 +3,11 @@
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
 [![Build Status][ico-travis]][link-travis]
+[![SensioLabs Insight][ico-sensio]][link-sensio]
+[![SensioLabsInsight][ico-sensiolab]][link-sensio]
 [![Coverage Status][ico-scrutinizer]][link-scrutinizer]
 [![Quality Score][ico-code-quality]][link-code-quality]
-[![Total Downloads][ico-downloads]][link-downloads]
+<!-- [![Total Downloads][ico-downloads]][link-downloads] -->
 
 This Bundle provides a way to create a xml sitemap using any source
 you want (Doctrine, Propel, MongoDB, Faker, etc.).
@@ -253,15 +255,18 @@ If you discover any security related issues, please email :author_email instead 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 This project was forked from [sitemap-php/KPhoenSitemapBundle](https://github.com/sitemap-php/KPhoenSitemapBundle/)
 
-[ico-version]: https://img.shields.io/packagist/v/larapulse/sitemap-bundle.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/larapulse/sitemap-bundle/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/larapulse/sitemap-bundle.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/larapulse/sitemap-bundle.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/larapulse/sitemap-bundle.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/larapulse/sitemap-bundle.svg?style=flat
+[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat
+[ico-travis]: https://img.shields.io/travis/larapulse/sitemap-bundle/master.svg?style=flat
+[ico-sensio]: https://img.shields.io/sensiolabs/i/1dc1c0d0-b27d-4481-a751-0fad311682b7.svg?style=flat
+[ico-sensiolab]: https://insight.sensiolabs.com/projects/1dc1c0d0-b27d-4481-a751-0fad311682b7/mini.png
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/larapulse/sitemap-bundle.svg?style=flat
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/larapulse/sitemap-bundle.svg?style=flat
+[ico-downloads]: https://img.shields.io/packagist/dt/larapulse/sitemap-bundle.svg?style=flat
 
 [link-packagist]: https://packagist.org/packages/larapulse/sitemap-bundle
 [link-travis]: https://travis-ci.org/larapulse/sitemap-bundle
+[link-sensio]: https://insight.sensiolabs.com/projects/1dc1c0d0-b27d-4481-a751-0fad311682b7
 [link-scrutinizer]: https://scrutinizer-ci.com/g/larapulse/sitemap-bundle/code-structure
 [link-code-quality]: https://scrutinizer-ci.com/g/larapulse/sitemap-bundle
 [link-downloads]: https://packagist.org/packages/larapulse/sitemap-bundle
